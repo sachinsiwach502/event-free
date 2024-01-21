@@ -145,6 +145,7 @@ header {
 }
 
 .h1 {
+    padding-bottom: 30px;
     color: #000;
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
@@ -514,13 +515,16 @@ li {
         height: 100%;
         width: 100%;
         position: fixed;
+        transition: linear 200ms;
         top: 0%;
         right: -100%;
+        z-index: 3;
     }
 
     label[for="menubar"] {
         width: 50px;
         height: 25px;
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -533,8 +537,8 @@ li {
         background-color: black;
     }
 
-    input[type="checkbox"]:checked~.lgView {
-        right: 0%;
+    input [type="checkbox"]:checked~.lgView {
+        right: 0;
     }
 
     .lg-inline {

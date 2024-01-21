@@ -335,10 +335,10 @@ header {
     align-items: center;
 }
 
-.w-100 {
+/* .w-100 {
     width: 100%;
     height: 100%;
-}
+} */
 
 .border {
     height: 70px;
@@ -352,7 +352,7 @@ header {
 input {
     border: none;
     height: 60px;
-    width: 800px;
+    width: max-content;
     margin-top: 20px;
     padding-left: 20px;
 }
@@ -391,6 +391,7 @@ input[placeholder] {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-style: normal;
+    width: max-content;
     font-weight: 600;
     line-height: 150%;
     /* 30px */
@@ -537,13 +538,13 @@ li {
         background-color: black;
     }
 
-    input [type="checkbox"]:checked~.lgView {
+    input[type="checkbox"]:checked~.lgView {
         right: 0;
     }
 
-    .lg-inline {
+    /* .lg-inline {
         padding-top: 20px;
-    }
+    } */
 
     .col-12-lg {
         width: 100%;
@@ -600,14 +601,9 @@ li {
         justify-content: none;
     }
 
-    /* .d-flex-1{
-        display: inline;
-    } */
+
 }
 
-/* .d-flex-1{
-    display: flex;
-} */
 .pl-185 {
     padding-left: 185px;
 }
@@ -653,4 +649,20 @@ li {
     .pt-70 {
         padding-top: 0%;
     }
+
+    .btn-3 {
+        /* margin-top: 15px; */
+        padding-left: 0px;
+    }
+
+    /* .fixed {
+        width: 100%;
+    } */
+}
+
+.fixed {
+    position: fixed;
+    top: 0%;
+    z-index: 2;
+    width: max-content;
 }
